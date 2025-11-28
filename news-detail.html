@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Berita - Arka Food</title>
+    <link rel="icon" href="assets/images/icon/iconmark.svg" type="image/svg+xml">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo3.png" alt="Arka Food Logo" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Back Button -->
+            <div class="mb-4 fade-in">
+                <a href="news.html" class="btn btn-outline-primary">
+                    <i class="fas fa-arrow-left me-2"></i> Kembali ke Berita
+                </a>
+            </div>
+
+            <!-- News Detail Container -->
+            <div class="news-detail-container fade-in" id="news-detail-container">
+                <!-- Main Content -->
+                <div class="news-content">
+                    <!-- Gallery -->
+                    <div class="news-detail-gallery">
+                        <div class="news-gallery-track" id="news-gallery-track">
+                            <!-- Gallery items populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Gallery Controls -->
+                    <div class="news-gallery-controls">
+                        <button class="news-gallery-btn" id="news-prev-btn">
+                            <i class="fas fa-chevron-left me-1"></i> Sebelumnya
+                        </button>
+                        <div class="news-gallery-dots" id="news-gallery-dots">
+                            <!-- Dots populated by JS -->
+                        </div>
+                        <button class="news-gallery-btn" id="news-next-btn">
+                            Berikutnya <i class="fas fa-chevron-right ms-1"></i>
+                        </button>
+                    </div>
+
+                    <!-- Article Title -->
+                    <h1 class="news-title" id="news-title"></h1>
+
+                    <!-- Article Meta Information -->
+                    <div class="news-meta">
+                        <span>
+                            <i class="fas fa-calendar"></i> 
+                            <span id="news-date"></span>
+                        </span>
+                        <span>
+                            <i class="fas fa-user"></i> 
+                            <span id="news-author"></span>
+                        </span>
+                        <span>
+                            <i class="fas fa-tag"></i> 
+                            <span id="news-category"></span>
+                        </span>
+                    </div>
+
+                    <!-- Article Content -->
+                    <div class="news-content-text" id="news-content">
+                        <!-- Content populated by JS -->
+                    </div>
+
+                    <!-- Share Section -->
+                    <div style="padding: 20px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-bottom: 30px;">
+                        <h6 class="mb-3">Bagikan Berita Ini:</h6>
+                        <div class="d-flex gap-2">
+                            <a href="https://www.facebook.com/arkafood.official?locale=id_ID" target="_blank" class="btn btn-sm btn-outline-primary" title="Bagikan ke Facebook">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                            <a href="https://wa.me/082116726900" class="btn btn-sm btn-outline-success" target="_blank" title="Bagikan ke WhatsApp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar - Recent News -->
+                <aside class="news-sidebar">
+                    <div class="sidebar-widget" id="news-sidebar">
+                        <!-- Recent news populated by JS -->
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Logo + Brand (ditempatkan berdampingan) -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="d-flex align-items-start">
+                        <img src="assets/images/logo2.png" alt="Arka Food Logo" class="img-fluid footer-logo me-3">
+                        <div>
+                            <h5>Arka Food</h5>
+                            <p class="mb-0">Menghadirkan produk makanan premium berkualitas untuk kepuasan pelanggan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kontak -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <h5>Kontak</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt me-2"></i> Jl. RTA Prawira Adiningrat, Tasikmalaya<br>
+                        <i class="fas fa-phone me-2"></i> 082116726900<br>
+                        <i class="fas fa-envelope me-2"></i> inalinul2123@gmail.com
+                    </p>
+                </div>
+
+                <!-- Social -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <h5>Ikuti Kami</h5>
+                    <div class="social-icons">
+                        <a class="social-instagram" href="https://www.instagram.com/arkafood.official/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="social-facebook" href="https://www.facebook.com/arkafood.official?locale=id_ID" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a class="social-whatsapp" href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center fade-in">
+                    <p class="mb-0">WEBSITE BY <a href="https://www.instagram.com/rinaldisatia/" style="text-decoration: none;">RINALDI SATIA</a> &copy; 2025 ARKA FOOD.</p>
+                   <p style="font-style: italic;"> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/news.js"></script>
+    <!-- Floating WhatsApp button -->
+    <a href="https://wa.me/6282116726900" class="floating-wa-button" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span>Hubungi via WhatsApp</span>
+    </a>
+</body>
+</html>
